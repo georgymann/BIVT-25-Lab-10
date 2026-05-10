@@ -8,6 +8,11 @@ public class Blue<T> where T : Lab9.Blue.Blue
     public BlueFileManager<T> Manager => _manager;
     public T[] Tasks => _tasks;
 
+    public Blue()
+    {
+        _tasks = new T[0];
+    }
+    
     public Blue(T[] tasks)
     {
         if (tasks == null)
